@@ -1,10 +1,9 @@
-from sys import exit
-from random import randint
+import time,random
 
-while True:
-    try:
-        print(randint(1,6))
+try:
+    while True:
+        print(random.randint(1,6))
         input('Press ENTER to roll again or Ctrl-C to close')
-    except KeyboardInterrupt:
-        print('Have a nice day. Thank you for using SeaWare.')
-        exit()
+except KeyboardInterrupt:
+    print('\nHave a nice day. Thank you for choosing SeaWare.')
+    time.sleep(3)
